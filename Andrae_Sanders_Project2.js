@@ -42,7 +42,7 @@ var Time = 8
 
 var SnoozeTimes = ["10", "20", "30"];
 
-var conditions = ["windy", "sunny", "rainy", "chilly", "warm", "breezy", "clear", "freezing"];
+var conditions = ["windy", "sunny", "rainy", "chilly", "breezy", "clear", "freezing"];
 
 var ShirtColors = [ "blue", "yellow", "green", "red", "white", "black"];
 
@@ -106,7 +106,7 @@ for (var temp = 0; temp <= 30; temp +=30) {
 console.log ("If it is more than 30 degrees, " + WakingUp );
 
 
-}
+};
 
 StayOrGo()
 
@@ -117,7 +117,18 @@ var LazyBones = function(){
 
 console.log (WakeUp + " " + WeatherCheck + " " + StayIn)
 
-}
+};
 
 LazyBones()
 
+
+//My Array
+
+var conditions = [" windy", "sunny", "rainy", "chilly", "breezy", "clear", "freezing"]
+
+for	(var TooCold = 31, Bearable = 32; TooCold < Bearable; TooCold++)
+	
+
+	{console.log ( "It is" + conditions[0] + ", " + conditions[2] + ", and " + conditions[6]);
+
+};
