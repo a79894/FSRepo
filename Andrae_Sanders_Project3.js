@@ -3,54 +3,68 @@
 
 //Boolean nested conditional
 
-var Batman = ["I need the Batsuit.", "vigilante", "To the Batmobile!", 
-    "punch", "Kick", "BodySlam", "DropKick",
-    "Flying Elbow", "Tie up", "I am ready to face the Joker." ,
-    "I am not prepared to defeat the Joker"];
-    
-    
-var UtilityBelt = 1, Batarang = 1, 
-GrapplingGun = 1, BatPhone = 1, 
-BatDarts = 6, SmokePellets = 6,
-Batsuit = true;      
-   
-if ((UtilityBelt === 1) &&  (Batarang === 1) && 
-	(GrapplingGun === 1) && (BatPhone === 1) && 
-	(BatDarts === 6) && (SmokePellets === 6 )) {
-	console.log(Batman[9]);
-	if (Batsuit === true){
-		console.log("Suited and Booted. " + Batman[2] ); 
-	  } else { 
-		console.log( Batman[0]);
-		};
-}else{
-	console.log(Batman[10]);
-};	    
+var BatmanSays = ["I need the BatSuit.", 
+			"To the BatCave!", 
+			"To the Batmobile!", 
+    		"I am ready to defeat the Joker." ,
+    		"I am not prepared to defeat the Joker"
+
+];
+
+var BatmanAttacks =  ["Punch", 
+					"Kick", 
+					"BodySlam", 
+					"DropKick", 
+					"Spinning Elbow"
+
+]; 
+
+var UtilityBelt = 1, 
+	Batarang = 1, 
+	GrapplingGun = 1, 
+	BatPhone = 1, 
+	BatDarts = 6, 
+	SmokePellets = 6,
+	Batsuit = 1; 
 
 
 //Json Data
 
 var CharFile = {
-	"Characters" : {
-		"Batman": {
+	"Characters" : [
+			{
 			"name" : "Bruce Wayne",
+			"AKA" : "The Batman",
 			"address" : "Wayne Manor",
 			"occupation" : "Masked Crime Fighter"
 		},
-		"Joker": {
+		    {
 			"name" : "Joe Chill",
+			"AKA" : "The Joker",
 			"address" : "Unknown",
 			"occupation" : "Criminal MasterMind"
 		}
-	}
+	]
 };
-
-
 for (var key in CharFile.Characters ) {
 	var character = CharFile.Characters [key];
-};
+	};
+     
+   
+if ((UtilityBelt === 1) &&  
+	(Batarang === 1) && 
+	(GrapplingGun === 1) && 
+	(BatPhone === 1) && 
+	(BatDarts === 6) && 
+	(SmokePellets === 6 )&&
+	(Batsuit ===1))
+{
+	console.log(BatmanSays[3]);
+} else {
+	console.log(BatmanSays[4]);
+};	   
 
-console.log(CharFile)
+
 
 
 //Batmobile
@@ -80,7 +94,7 @@ ReportMpg(mpg)
 
 
 
-
+console.log(CharFile)
 
 
 
