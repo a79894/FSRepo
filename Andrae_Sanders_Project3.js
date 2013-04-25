@@ -66,7 +66,8 @@ var CharFile = {
 	"name" : "Bruce Wayne",
 	"AKA" : "The Batman",
 	"address" : "Wayne Manor",
-	"occupation" : "Masked Crime Fighter"
+	"occupation" : "Masked Crime Fighter",
+	
 },
 {
 	"name" : "Joe Chill",
@@ -75,12 +76,12 @@ var CharFile = {
 	"occupation" : "Criminal MasterMind"
 }
 ]
-};
+}
 for (var key in CharFile.Characters ) {
 	var character = CharFile.Characters [key];
 	};
      
-   
+
 if ((UtilityBelt === 1) &&  
 	(Batarang === 1) && 
 	(GrapplingGun === 1) && 
@@ -92,8 +93,7 @@ if ((UtilityBelt === 1) &&
 	console.log(BatmanSays[3]);
 } else {
 	console.log(BatmanSays[4]);
-};	   
-
+};
 
 
 
@@ -113,9 +113,13 @@ var ReportMpg = function(mpg) {
 };
 
 var mpg = BatMpg(500,10);
-ReportMpg(mpg)
+//ReportMpg(mpg)
 
-console.log("The Joker says " + JokerSays[5] + " and fires a Rocket at the Batmobile." )
+
+console.log("The Joker says " + 
+			JokerSays[5] + 
+			" and fires a Rocket at the Batmobile." )
+
 
 for (BatMobileCondition = 100; 
 	 BatMobileCondition > 0; 
@@ -134,10 +138,9 @@ for (BatMobileCondition = 100;
 	 		 BatMobileIndicator[2])
 };
 
-console.log("After a long chase, The Batman catches the Joker " + BatmanAttacks[4])
+console.log("After a long chase, The Batman catches the Joker and  " + BatmanAttacks[4])
 
 // Math
-
 
 var ThrowCount;
 var DiceThrow;
@@ -147,24 +150,39 @@ for ( ThrowCount = 0;
 	  ThrowCount ++)
 
 {
-	DiceThrow = (
-	Math.floor(Math.random() * 6 + 1));
-	//console.log(DiceThrow)
-}
+	DiceThrow = (Math.floor(Math.random() * 6 + 1));
 
 if (
 	dicethrow = 1 )
-	{console.log ( "The Joker is laughing.") 
+	{console.log ( "The Joker is laughing. " + JokerSays[5]) 
 	}
 
+(dicethrow = 2 )
+	{console.log ( BatmanAttacks[0] + JokerAttacks[0] + JokerSays[0] ) 
+	}
 (
-	dicethrow = 2 )
-	{console.log ( "The Joker is laughing.") 
+	dicethrow = 3 )
+	{console.log (BatmanAttacks[1] + JokerSays[1] + JokerAttacks[1]) 
 	}
-
-
+(
+	dicethrow = 4 )
+	{console.log ( BatmanAttacks[2] + JokerSays[2] + JokerAttacks[2]) 
+	}	
+(
+	dicethrow = 5 )
+	{console.log ( BatmanAttacks[3] + JokerAttacks[3] + JokerSays [3]) 
+	}
+(
+	dicethrow = 6 )
+	{console.log (BatmanAttacks[4] + JokerAttacks[4] + JokerSays[4])
+		}
+		
+		
+		}	
+	
+	
+	
 console.log(CharFile)
-
 
 
 
