@@ -50,7 +50,7 @@ var BatMobileIndicator = [
 
 var UtilityBelt = 1, 
 	Batarang = 1, 
-	GrapplingGun = 1, 
+	GrapplingGun =1, 
 	BatPhone = 1, 
 	BatDarts = 6, 
 	SmokePellets = 6,
@@ -97,19 +97,19 @@ if ((UtilityBelt === 1) &&
 
 
 
-//Batmobile
-
 var BatMpg = function(x,y) {
-var Miles = x;
-var Gallons = y;
-var mpg = x/y;
+	var Miles = x;
+	var Gallons = y;
+	var mpg = x/y;
 
 return mpg;
 };  
+ 
 
 var ReportMpg = function(mpg) {
     console.log("The Bat-Mobile gets " + 
-    mpg + " miles per gallon and is " + BatMobileIndicator[0] + ".");
+    mpg + " miles per gallon and is " + 
+    BatMobileIndicator[0] + ".");
 };
 
 var mpg = BatMpg(500,10);
@@ -143,48 +143,39 @@ console.log("After a long chase, The Batman catches the Joker and  " + BatmanAtt
 // Math
 
 var ThrowCount;
-var DiceThrow;
+var ActionSeq;
 
 for ( ThrowCount = 0; 
 	  ThrowCount < 10; 
 	  ThrowCount ++)
 
 {
-	DiceThrow = (Math.floor(Math.random() * 6 + 1));
+ ActionSeq = (Math.floor(Math.random() * 6 + 1));
+}
 
-if (
-	dicethrow = 1 )
-	{console.log ( "The Joker is laughing. " + JokerSays[5]) 
-	}
 
-(dicethrow = 2 )
-	{console.log ( BatmanAttacks[0] + JokerAttacks[0] + JokerSays[0] ) 
-	}
-(
-	dicethrow = 3 )
-	{console.log (BatmanAttacks[1] + JokerSays[1] + JokerAttacks[1]) 
-	}
-(
-	dicethrow = 4 )
-	{console.log ( BatmanAttacks[2] + JokerSays[2] + JokerAttacks[2]) 
-	}	
-(
-	dicethrow = 5 )
-	{console.log ( BatmanAttacks[3] + JokerAttacks[3] + JokerSays [3]) 
-	}
-(
-	dicethrow = 6 )
-	{console.log (BatmanAttacks[4] + JokerAttacks[4] + JokerSays[4])
-		}
-		
-		
-		}	
+var BatWing = {
+	"VehicleType" : "Ariel",
+	"Occupancy" : "Single",
+	"Condition" : 100,
+	"Ignition" : 100,
+	"FireEngine" : function(Condition, Ignition) // Method Accessor
+	{
+	var AllClear = this.Condition * this.Ignition
 	
+	return AllClear;
+	},
+	"SystemCheck" : function() { //Method Function
+	var AllSystemsGo = BatWing.Condition === Batwing.Ignition
 	
+	},
+	"TakeFlight" : function() {},
+
+}
+	
+console.log(BatWing.Allclear)	
 	
 console.log(CharFile)
-
-
 
 
 
