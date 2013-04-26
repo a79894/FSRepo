@@ -106,19 +106,13 @@ return mpg;
 };  
  
 
-var ReportMpg = function(mpg) {
-    console.log("The Bat-Mobile gets " + 
-    mpg + " miles per gallon and is " + 
-    BatMobileIndicator[0] + ".");
-};
+//var ReportMpg = function(mpg) {
+//    console.log("The Bat-Mobile gets " + 
+//    mpg + " miles per gallon and is " + 
+//    BatMobileIndicator[0] + ".");
 
-var mpg = BatMpg(500,10);
+//var mpg = BatMpg(500,10);
 //ReportMpg(mpg)
-
-
-console.log("The Joker says " + 
-			JokerSays[5] + 
-			" and fires a Rocket at the Batmobile." )
 
 
 for (BatMobileCondition = 100; 
@@ -138,8 +132,6 @@ for (BatMobileCondition = 100;
 	 		 BatMobileIndicator[2])
 };
 
-console.log("After a long chase, The Batman catches the Joker and  " + BatmanAttacks[4])
-
 // Math
 
 var ThrowCount;
@@ -151,6 +143,7 @@ for ( ThrowCount = 0;
 
 {
  ActionSeq = (Math.floor(Math.random() * 6 + 1));
+ 
 }
 
 
@@ -159,20 +152,48 @@ var BatWing = {
 	"Occupancy" : "Single",
 	"Condition" : 100,
 	"Ignition" : 100,
-	"FireEngine" : function(Condition, Ignition) // Method Accessor
-	{
-	var AllClear = this.Condition * this.Ignition
-	
+	"FireEngine" : function() // Method Accessor
+{
+	var invalid = "System Failure"
+	var AllClear = 10000
+	if  (this.Condition === 100 &&  this.Ignition === 100)
+{
 	return AllClear;
-	},
+	} else {
+	 return invalid;
+}
+	
+},
+	"SetCondition" : function (NewCondition) {  //Method Mutator
+	NewCondition = (this.Condition - 10)
+	//return NewCondition
+},
 	"SystemCheck" : function() { //Method Function
 	var AllSystemsGo = BatWing.Condition === Batwing.Ignition
-	
-	},
-	"TakeFlight" : function() {},
+	return AllSystemsGo;
+},
+	"TakeFlight" : function() { // Method Procedure
+		var Invalid = "System Failure"
+		if (AllClear === 10000) {
+}
+
+		else{
+		 console.log("Fail to Execute Launch")
+}
+}
 
 }
 	
+
+console.log("After a long chase, The Batman catches the Joker and  " + BatmanAttacks[4])
+
+console.log("The Joker says " + JokerSays[5] + " and fires a Rocket at the Batmobile." )
+console.log ( "The Joker is laughing. " + JokerSays[5]) 
+console.log ( BatmanAttacks[0] + JokerAttacks[0] + JokerSays[0] ) 
+console.log (BatmanAttacks[1] + JokerSays[1] + JokerAttacks[1]) 
+console.log ( BatmanAttacks[2] + JokerSays[2] + JokerAttacks[2]) 
+console.log ( BatmanAttacks[3] + JokerAttacks[3] + JokerSays [3]) 
+console.log (BatmanAttacks[4] + JokerAttacks[4] + JokerSays[4])
 console.log(BatWing.Allclear)	
 	
 console.log(CharFile)
