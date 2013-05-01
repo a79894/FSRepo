@@ -1,0 +1,41 @@
+//alert("JavaScript works!");
+
+
+
+
+skdhjgfkjdsrger
+
+/* Andrae Sanders	
+ * SDI 1304
+ * Project 4
+ *Library of functions
+ */
+ 
+ var mylibrary = function(){
+ 
+ 	//Phone Number Pattern
+ 	
+ 	//email Pattern
+ 	
+ 	//URL pattern
+ 	
+ 	//Title-case
+ 	
+ 	//Separated by given string
+ 	
+ 	//Format number for two place decimal
+ 	
+ 	//Fuzzy-Match number
+ 	
+ 	//Number days difference
+ 	
+ 	//string value returned as number value
+ 	
+ 	//smallest value of given value in array
+ 	
+ 	//Total Value of Just numbers in array
+ 	
+ 	//return array sorted by key value
+ 	
+ 
+ }
