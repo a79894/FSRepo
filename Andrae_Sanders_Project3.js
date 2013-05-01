@@ -175,7 +175,7 @@ var BatWing = {
 	"TakeFlight" : function() { // Method Procedure
 		var Invalid = "System Failure"
 		if (AllClear === 10000) {
-}
+}IBool
 
 		else{
 		 console.log("Fail to Execute Launch")
